@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UtopIA - Innover pour tous, progresser ensemble</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header id="home">
+        <div class="container">
+            <h1 class="animate-text">UtopIA</h1>
+            <p>Innover pour tous, progresser ensemble</p>
+            <a href="#about" class="cta-button">Rejoignez-nous</a>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <img src="logo.png" alt="Logo" class="logo"> <!-- Ajoutez ceci pour le logo -->
+
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="vote.html">Vote citoyen</a></li>
+            <li><a href="blockchain.html">Portefeuille Blockchain</a></li>
+            <li><a href="carte.html">Carte Interactive</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <section id="about" class="section">
+        <div class="content">
+            <h2>À propos du parti</h2>
+            <p>UtopIA combine l'intelligence artificielle et la solidarité pour construire un futur plus juste, où la technologie est mise au service de tous. Nous croyons en un modèle de société où les innovations numériques ne profitent pas seulement à une minorité, mais sont utilisées pour améliorer la vie de chaque citoyen. Grâce à des solutions avancées d'IA, nous aspirons à réduire les inégalités, renforcer la démocratie participative et garantir une transparence totale dans la gestion des ressources. UtopIA s'engage à créer une société inclusive, durable et équitable, où chacun a un rôle à jouer dans la construction du progrès collectif.</p>
+        </div>
+    </section>
+    
+    <section id="programme" class="section">
+        <div class="content">
+            <h2>Programme</h2>
+            <p>Découvrez nos solutions pour un futur plus équitable.</p>
+            <div class="program-cards">
+                <div class="card animate-card">
+                    <h3>Éducation</h3>
+                    <p>Utiliser l'IA pour améliorer l'accès à une éducation de qualité pour tous.</p>
+                </div>
+                <div class="card animate-card">
+                    <h3>Santé</h3>
+                    <p>Déployer des technologies de santé prédictive et proactive.</p>
+                </div>
+                <div class="card animate-card">
+                    <h3>Justice sociale</h3>
+                    <p>Réduire les inégalités grâce à une gouvernance transparente et équitable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="events" class="section">
+        <div class="content">
+            <h2>Événements</h2>
+            <ul class="events-list">
+                <li><strong>10 Novembre</strong> - Meeting à Paris</li>
+                <li><strong>15 Décembre</strong> - Conférence sur l'IA et la politique</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="content">
+            <h2>Contactez-nous</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Votre nom" required>
+                <input type="email" placeholder="Votre email" required>
+                <textarea placeholder="Votre message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Chatbot Icon -->
+    <div id="chatbot-icon" onclick="openChatbot()">
+        <img src="chatbot-icon.png" alt="Chatbot Icon" class="chatbot-icon">
+    </div>
+
+      <!-- Chatbot Window -->
+      <div id="chatbot-window" class="chatbot-window hidden">
+        <div class="chatbot-header">
+            <h3>Assistant Citoyen</h3>
+            <button class="close-btn" onclick="closeChatbot()">X</button>
+        </div>
+        <div class="chatbot-content">
+            <div class="chatbot-messages"></div>
+        </div>
+        <div class="chatbot-footer">
+            <input type="text" class="chatbot-input" placeholder="Écrivez votre message...">
+            <button class="send-btn">Envoyer</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 UtopIA. Tous droits réservés.</p>
+            <div class="socials">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Charger le fichier JavaScript ici -->
+    <script src="script.js"></script>
+</body>
+</html>

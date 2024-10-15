@@ -1,0 +1,646 @@
+/* Style global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f0f9ff;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+/* Header */
+header {
+    height: 70vh; /* Réduisez la hauteur ici (de 100vh à 70vh) */
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+
+header h1 {
+    font-size: 4rem;
+    animation: animate-text 3s ease-in-out infinite;
+}
+
+header p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.cta-button {
+    padding: 1rem 2rem;
+    background-color: #ff5722;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e64a19;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 1rem;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ff5722;
+}
+
+/* Sections */
+.section {
+    padding: 5rem 1rem;
+    text-align: center;
+    background-color: #ffffff;
+    transition: background-color 1s ease;
+}
+
+.section:nth-child(odd) {
+    background-color: #e3f2fd;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #0072ff;
+}
+
+.program-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 30%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background-color: #e0f7fa;
+}
+
+/* Vote section */
+.vote-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+
+.vote-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; /* Occupe toute la largeur de l'espace disponible */
+    max-width: 400px; /* Limite la largeur maximale */
+}
+
+.vote-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.vote-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #0072ff;
+}
+
+.vote-card p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+/* Buttons */
+.vote-button {
+    padding: 0.8rem 1.5rem;
+    background-color: #0072ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+.vote-button:hover {
+    background-color: #005cb2;
+}
+
+.vote-button:active {
+    background-color: #003d80;
+}
+
+
+/* Assistant Citoyen section */
+.assistant-container {
+    text-align: center;
+}
+
+.assistant-image {
+    width: 200px;
+    margin-top: 1rem;
+}
+
+/* Portefeuille Blockchain section */
+.don-container {
+    text-align: center;
+}
+
+.qr-image {
+    width: 150px;
+    margin-top: 1rem;
+}
+
+/* Carte interactive section */
+.map-placeholder {
+    height: 400px;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #0072ff;
+    margin-top: 2rem;
+}
+
+/* Events */
+.events-list {
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+
+/* Contact Form */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#contact-form input, #contact-form textarea {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    padding: 1rem;
+    background-color: #0072ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #005cb2;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    position: relative;
+}
+
+footer .socials {
+    margin-top: 1rem;
+}
+
+footer .socials a {
+    margin: 0 0.5rem;
+}
+
+/* Animations */
+@keyframes animate-text {
+    0% { color: #ffffff; }
+    50% { color: #ff5722; }
+    100% { color: #ffffff; }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fade-in 2s forwards;
+}
+
+@keyframes fade-in {
+    to { opacity: 1; }
+}
+/* Chatbot styles */
+#chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 1000;
+    display: block; /* Assurez-vous que l'icône est visible par défaut */
+}
+
+.chatbot-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Assurez-vous que l'image s'adapte correctement */
+}
+
+#chatbot-window {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid #0072ff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+    display: none; /* Initialement caché */
+}
+
+.chatbot-header {
+    background-color: #0072ff;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatbot-header .close {
+    cursor: pointer;
+}
+
+.chatbot-content {
+    padding: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.chatbot-footer {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatbot-footer input {
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.chatbot-footer button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #0072ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-family: 'Arial', sans-serif;
+    z-index: 1000;
+  }
+  
+  #chatbot-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #0072ff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  #chatbot-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  #chatbot-icon svg {
+    width: 30px;
+    height: 30px;
+    color: white;
+  }
+  
+  #chatbot-window {
+    position: absolute;
+    bottom: 70px; /* Ajusté pour être juste au-dessus de l'icône */
+    right: 0;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    z-index: 1001; /* Assurez-vous que la fenêtre est au-dessus de l'icône */
+  }
+  
+  #chatbot-window.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .chatbot-header {
+    background-color: #0072ff;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .chatbot-header h3 {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .chatbot-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 15px;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    border-radius: 18px;
+    max-width: 80%;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  .user-message {
+    background-color: #e6f2ff;
+    align-self: flex-end;
+    margin-left: auto;
+  }
+  
+  .bot-message {
+    background-color: #f0f0f0;
+    align-self: flex-start;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .chatbot-input {
+    display: flex;
+    padding: 15px;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  .chatbot-input input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+  
+  .send-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .send-btn svg {
+    width: 24px;
+    height: 24px;
+    color: #0072ff;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  .chatbot-header, .chatbot-messages, .chatbot-input {
+  width: 100%;
+}
+
+.chatbot-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 15px;
+  background-color: #f9f9f9; /* Ajouté pour visualiser la zone des messages */
+}
+
+.chatbot-input {
+  padding: 15px;
+  background-color: white;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Icône du chatbot */
+#chatbot-icon {
+    background-color: #0072ff;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+#chatbot-icon:hover {
+    transform: scale(1.1);  
+}
+
+/* Animation d'ouverture de la fenêtre du chatbot */
+#chatbot-window {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+#chatbot-window.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Effet de fondu des messages */
+.message {
+    animation: fadeIn 0.3s ease;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* Carte interactive */
+.map-placeholder {
+    background-image: url('map.png'); /* Assurez-vous que le chemin de l'image est correct */
+    background-size: contain; /* Affiche l'image entière en conservant son ratio */
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%; /* Prend toute la largeur disponible */
+    max-width: 600px; /* Limite la largeur maximale */
+    height: 400px; /* Ajustez la hauteur si nécessaire */
+    border: 2px solid #0072ff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 2rem auto; /* Centre la carte horizontalement */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.map-placeholder:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Description de la carte */
+.map-description {
+    text-align: center;
+    margin-top: 1rem;
+    color: #333;
+    font-size: 1rem;
+}
+/* Styles généraux */
+.section {
+    opacity: 0; /* Masquer la section par défaut */
+    transform: translateX(-50px); /* Décaler vers la gauche pour l'animation */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transition pour l'animation */
+}
+
+/* Classe pour afficher la section */
+.section.visible {
+    opacity: 1; /* Rendre la section visible */
+    transform: translateX(0); /* Remettre la section à sa position originale */
+}
+
+/* Ajoutez un délai pour chaque section */
+#about.visible { transition-delay: 0.5s; }
+#programme.visible { transition-delay: 1s; }
+#events.visible { transition-delay: 1.5s; }
+#contact.visible { transition-delay: 2s; }
+
+#about {
+    background-image: url('about-image.jpg'); /* Chemin de l'image d'arrière-plan */
+    background-size: cover; /* Couvre toute la section */
+    background-position: center; /* Centre l'image */
+    padding: 5rem 1rem; /* Espacement interne */
+    color: white; /* Change la couleur du texte en blanc pour plus de lisibilité */
+    position: relative; /* Nécessaire pour le positionnement des éléments internes */
+}
+
+#about .content {
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour le texte */
+    padding: 2rem; /* Espacement interne */
+    border-radius: 10px; /* Coins arrondis pour le fond */
+    max-width: 600px; /* Limite la largeur maximale du contenu */
+    margin: 0 auto; /* Centre le contenu horizontalement */
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0.05rem 1rem; /* Réduisez le padding au minimum */
+    z-index: 1000;
+    display: flex; /* Flexbox pour la disposition */
+    align-items: center; /* Centre verticalement les éléments */
+    height: 80px; /* Définit une hauteur spécifique si besoin */
+}
+
+.navbar img.logo {
+    height: auto; /* Assurez-vous que la hauteur s'ajuste automatiquement */
+    max-width: 80px; /* Réduisez la largeur maximale du logo */
+    width: auto; /* Laisse la largeur s'ajuster proportionnellement */
+    margin-right: 1rem; /* Espace entre le logo et les éléments de la navbar */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centre les éléments de la liste horizontalement */
+    align-items: center;
+    flex: 1; /* Prend tout l'espace restant */
+}
+
+.navbar ul li {
+    margin: 0 0.5rem; /* Réduisez la marge des éléments */
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ff5722;
+}
+
+.socials {
+    display: flex; /* Utilise Flexbox pour aligner les icônes */
+    justify-content: center; /* Centre les icônes horizontalement */
+    margin-top: 1rem; /* Ajoute un espacement au-dessus des icônes */
+}
+
+.socials a {
+    margin: 0 10px; /* Espace entre les icônes */
+}
+
+.socials img {
+    width: 30px; /* Ajustez la taille ici (largeur) */
+    height: 30px; /* Hauteur pour assurer que toutes les icônes ont la même taille */
+    object-fit: contain; /* Assure que l'image s'ajuste bien à l'espace */
+}

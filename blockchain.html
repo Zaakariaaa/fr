@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portefeuille Blockchain - UtopIA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <img src="logo.png" alt="Logo" class="logo"> <!-- Ajoutez ceci pour le logo -->
+
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="vote.html">Vote citoyen</a></li>
+            <li><a href="blockchain.html">Portefeuille Blockchain</a></li>
+            <li><a href="carte.html">Carte Interactive</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Portefeuille Blockchain</h1>
+    </header>
+
+    <section class="section">
+        <div class="content">
+            <h2>Dons Sécurisés via Blockchain</h2>
+            <p>Soutenez nos projets grâce à la technologie blockchain.</p>
+            <img src="qr-code.png" alt="QR Code pour le don" class="qr-image">
+        </div>
+    </section>
+
+    <!-- Chatbot Icon -->
+    <div id="chatbot-icon" onclick="openChatbot()">
+        <img src="chatbot-icon.png" alt="Chatbot Icon" class="chatbot-icon">
+    </div>
+   <!-- Chatbot Window -->
+   <div id="chatbot-window" class="chatbot-window hidden">
+    <div class="chatbot-header">
+        <h3>Assistant Citoyen</h3>
+        <button class="close-btn" onclick="closeChatbot()">X</button>
+    </div>
+    <div class="chatbot-content">
+        <div class="chatbot-messages"></div>
+    </div>
+    <div class="chatbot-footer">
+        <input type="text" class="chatbot-input" placeholder="Écrivez votre message...">
+        <button class="send-btn">Envoyer</button>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
