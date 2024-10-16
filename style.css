@@ -645,29 +645,3 @@ footer .socials a {
     object-fit: contain; /* Assure que l'image s'ajuste bien à l'espace */
 }
 
-.vote-button {
-    padding: 0.8rem 1.5rem;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: 1rem;
-    margin-right: 0.5rem;
-}
-
-.yes-button {
-    background-color: #4caf50; /* Vert pour le bouton "Oui" */
-}
-
-.yes-button:hover {
-    background-color: #45a049; /* Couleur plus foncée au survol */
-}
-
-.no-button {
-    background-color: #f44336; /* Rouge pour le bouton "Non" */
-}
-
-.no-button:hover {
-    background-color: #e53935; /* Couleur plus foncée au survol */
-}
