@@ -644,4 +644,14 @@ footer .socials a {
     height: 30px; /* Hauteur pour assurer que toutes les icônes ont la même taille */
     object-fit: contain; /* Assure que l'image s'ajuste bien à l'espace */
 }
+.vote-button {
+    padding: 0.8rem 1.5rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
 
